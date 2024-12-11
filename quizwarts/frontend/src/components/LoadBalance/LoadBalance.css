@@ -1,0 +1,119 @@
+.cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  gap: 2rem;
+  margin: 0 auto;
+  width: 40vw;
+  height: 40vh;
+  max-width: 550px;
+}
+.load-container{
+  max-width: 550px;
+}
+.btn-continue{
+  display: flex;
+  justify-self: center;
+  border: 0;
+}
+.load-tittle{
+  display: flex;
+  justify-content: center;
+}
+.cardBalance {
+  background-color: #444;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+}
+
+.cardLoad {
+  width: 25%; /* Ajustamos para que siempre quepan tres por fila */
+  height: 15vh;
+  background-color: #2A2940;
+  color: #D2AA6B;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.2s, border 0.2s;
+  box-shadow: 1px 1px 6px 1px#D2AA6B;
+}
+.cardLoad p {
+  margin: 2px 0;
+}
+
+.cardLoad .amount {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.cardLoad .galeones {
+  font-size: 1.5rem;
+  color: #D2AA6B
+}
+
+.cardLoad.selected {
+  transition: transform 0.2s ease-in-out;
+  border: 2px solid #D2AA6B; /* Borde dorado cuando está seleccionada */
+}
+
+.cardLoad:hover {
+  transform: translateY(-5px);
+}
+
+@media (max-width: 768px) {
+  .cards-container {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    width: 100%;
+    height: auto; /* Ajusta la altura para que se adapte al contenido */
+    padding: 1rem;
+  }
+  
+
+  .cardLoad {
+    flex: 1 1 45%; /* Ocupa casi la mitad del ancho en pantallas pequeñas */
+    min-width: 70px;
+    max-width: 200px;
+    height: auto;
+    padding: 1rem;
+    box-shadow: none;
+  }
+}
+
+.btn-continue {
+  display: flex;
+  justify-content: center;
+  border: 0;
+  
+}
+.btn-continue:active{
+  outline: none !important; 
+    box-shadow: none !important;
+    background-color: #433c87 !important;
+    color: #d2aa6b !important; 
+}
+@media (max-width: 768px) {
+  .cardLoad {
+    width: 140px;
+    height: 100px;
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .cardLoad {
+    width: 100px;
+    height: 80px;
+    font-size: 0.8rem;
+  }
+}

@@ -1,0 +1,128 @@
+/*  NavBar     */
+.b-container-nav {
+  background-color: rgba(0, 0, 0, 0.4);
+  height: max-content;
+}
+
+.b-container-drop {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.nav-underline-golden .nav-link {
+  width: fit-content;
+  position: relative;
+  padding-bottom: 4px;
+  /* Añadir espacio extra para el underline */
+}
+
+.nav-underline-golden .nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  /* Grosor de la línea */
+  background-color: #D2AA6B;
+  /* Color del underline */
+  transition: width 0.3s ease;
+}
+
+.nav-link:hover {
+  color: var(--font-color-golden);
+}
+
+.nav-underline-golden .nav-link:hover::after {
+  width: 100%;
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255,0.8)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+.navbar-toggler {
+  border-color: rgba(128, 128, 128, 0.5);
+  /* Color gris claro */
+}
+
+.nav-link:active,
+.nav-link:focus,
+.nav-link:hover {
+  color: var(--font-color-golden);
+}
+
+.navbar-toggler:focus,
+.navbar-toggler:active {
+  outline: none;
+  box-shadow: none;
+  border-color: rgba(128, 128, 128, 0.8);
+  /* Gris más visible */
+  border-width: 1px;
+  /* Borde más fino */
+}
+
+.btnNavbar.text-navbar {
+  color: var(--font-color-golden);
+  /* Color dorado */
+}
+
+.btnNavbar.text-navbar:hover,
+.btnNavbar.text-navbar:active,
+.btnNavbar.text-navbar:focus {
+  color: var(--font-color-golden);
+  /* Mantiene el color dorado en hover, active y focus */
+  background-color: transparent;
+  /* Evita cambiar el fondo */
+  outline: none;
+  box-shadow: none;
+}
+
+.mr-nav {
+  margin-right: 6%;
+}
+
+.navbar {
+  height: auto;
+  /* Asegura que el nav se ajuste a su contenido */
+}
+
+.navbar-collapse {
+  overflow: visible;
+  /* Evita que el dropdown quede oculto */
+}
+
+/* Para evitar superposición en mobile */
+.dropdown-menu {
+  position: relative;
+  margin-top: 0.5rem;
+  /* Para evitar que se superponga demasiado cerca del botón */
+}
+
+.dropdown-item:hover {
+  background-color: rgb(202, 166, 109, .1);
+  color: #D2AA6B;
+}
+
+/* Dropdown personalizado para pantallas grandes */
+.nav-dropdown {
+  position: relative;
+}
+
+@media (min-width: 992px) {
+  .nav-dropdown-menu {
+    position: absolute;
+    top: 99%;
+    /* Muestra el menú justo debajo del botón */
+    right: auto;
+    left: -25%;
+    z-index: 1000;
+    width: auto;
+    /* Ajusta el ancho del menú */
+  }
+}
+
+.active-border {
+  border: 1px solid #D2AA6B;
+  /* El color del borde */
+  box-shadow: 0 0 5px rgba(200, 162, 97, 0.683) !important;
+}

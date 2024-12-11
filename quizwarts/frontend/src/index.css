@@ -1,0 +1,150 @@
+:root{
+  --background-principal: linear-gradient(to bottom, #263D40, #263149);
+  --background-gryffindor: linear-gradient(to bottom, #9B2226, #C9CBAA);
+  --background-hufflepuff: linear-gradient(to bottom, #F0C30F, #4B3D0A);
+  --background-ravenclaw: linear-gradient(to bottom, #003DA5, #A0A0A0);
+  --background-slytherin: linear-gradient(to bottom, #2A473B, #A0A0A0);
+  --font-harry-potter: 'Harry P', sans-serif;
+  --font-color-golden: #D2AA6B;
+}
+
+body{
+  margin: 0;
+  padding: 0;
+}
+
+/*Buttons*/
+.btn-violet{
+  background: #281D40;
+}
+
+.btn-lilac{
+  background: #6B63B5;
+}
+
+.btn-violet:hover {
+  background: #452A75;
+}
+
+.btn-lilac:hover {
+  background: #433c87;
+}
+
+/*Backgrounds*/
+.b-principal{
+  background: var(--background-principal)!important;
+  min-height: 100vh;
+}
+
+.b-gryffindor{
+  background: var(--background-gryffindor);
+}
+
+.b-hufflepuff{
+  background: var(--background-hufflepuff);
+}
+
+.b-ravenclaw{
+  background: var(--background-ravenclaw);
+}
+
+.b-slytherin{
+  background: var(--background-slytherin);
+}
+
+.b-container{
+  background-color: rgba(47, 57, 77, 0.8);
+}
+
+.b-input{
+  background: #2A2940;
+}
+
+.b-input:focus{
+  background: #2A2940;
+}
+
+/*Font-sizes*/
+.fs-7{
+  font-size: .85rem;
+}
+
+.fs-8{
+  font-size: .8rem;
+}
+
+/*Font color*/
+.text-golden{
+  color: var(--font-color-golden);
+}
+
+/*Borders*/
+.border-golden-1{
+  border: 1px solid var(--font-color-golden);
+}
+
+.border-golden-2{
+  border: 2px solid var(--font-color-golden);
+}
+
+.border-golden-3{
+  border: 3px solid var(--font-color-golden);
+}
+
+.f-hp{
+  font-family: var(--font-harry-potter);
+}
+
+/*Avatar circle*/
+.avatar-circle{
+  border-radius: 100%
+}
+
+/* Column gap */
+.column-gap-6{
+  column-gap: 4rem;
+}
+
+.column-gap-7{
+  column-gap: 5rem;
+}
+
+.column-gap-8{
+  column-gap: 6rem;
+}
+
+.column-gap-9{
+  column-gap: 7rem;
+}
+
+
+.nav-underline-golden .nav-link:hover::after {
+  width: 100%; /* Ancho completo en hover */
+}
+
+.b-container{
+  background-color: rgba(47, 57, 77, 0.8);
+}
+
+.b-input{
+  background: #2A2940;
+}
+
+.padding-t-b-50{
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+/*Letra blanca a los placeholder*/
+.white-placeholder::placeholder{
+  color: white;
+}
+
+/*Tamaño letra Harry Potter*/
+.fs-4r{
+  font-size: 4rem; 
+}
+
+.gap-5{
+  gap: 10rem;
+}

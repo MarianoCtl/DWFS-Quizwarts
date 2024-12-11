@@ -1,0 +1,35 @@
+.home-play {
+    min-height: calc(100vh - 175.19px);
+}
+
+::-webkit-scrollbar {
+    width: 12px !important;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #D2AA6B;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: rgba(47, 57, 77, 0.8);
+    border-radius: 10px;
+}
+
+@media (max-width: 767px) {
+    .chat-mobile {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        padding: 0;
+    }
+
+    .nav-bar-homeplay {
+        position: relative;
+        z-index: 1;
+        background: #294145;
+
+    }
+}

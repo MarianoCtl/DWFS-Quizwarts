@@ -1,0 +1,14 @@
+.min-w{
+    min-width: 160px;
+}
+@media (max-width:500px){
+    .min-w{
+        font-size: 1.2rem;
+    }
+}
+.btn-play:active {
+    outline: none !important; 
+    box-shadow: none !important;
+    background-color: #433c87 !important;
+    color: #d2aa6b !important; 
+}

@@ -1,0 +1,22 @@
+.ranking-list {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.ranking-item {
+    list-style: none;
+    border-bottom: 0.5px solid #D2AA6B;
+    width: 100%;
+    display: flex; 
+    align-items: center; 
+    padding: 5px 0;
+    box-sizing: border-box; 
+}
+
+  @media (max-width: 768px) {
+   .ranking-respuestas{
+    font-size: smaller;
+   }
+  }
+

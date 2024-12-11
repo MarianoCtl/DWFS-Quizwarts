@@ -1,0 +1,57 @@
+.ctn-table-history {
+    min-width: 80%;
+}
+
+.games-title {
+    font-size: 1.6rem;
+}
+
+.table-history {
+    overflow-y: auto;
+    overflow-x: hidden;
+    max-height: 50vh;
+    border: 0.2rem solid #3d3b5d79;
+}
+
+.table-custom {
+    width: 100%;
+    border-collapse: collapse;
+
+}
+
+.table-custom th,
+.table-custom td {
+    padding: 0.5em;
+    text-align: center;
+    border-bottom: 1px solid var(--font-color-golden);
+}
+
+@media(max-width:400px) {
+    .games-title {
+        margin-left: 5%;
+    }
+
+    .ctn-table-history {
+        width: 90%;
+    }
+
+    .ctn-table-history table {
+        font-size: .9rem;
+    }
+
+    .ctn-table-history table thead th:nth-child(3),
+    /* Participantes */
+    .ctn-table-history table thead th:nth-child(4),
+    /* Puntaje Obtenido */
+    .ctn-table-history table tbody td:nth-child(3),
+    /* Participantes */
+    .ctn-table-history table tbody td:nth-child(4)
+    /* Puntaje Obtenido */
+        {
+        display: none;
+    }
+
+    .table-history::-webkit-scrollbar {
+        width: 8px !important;
+    }
+}

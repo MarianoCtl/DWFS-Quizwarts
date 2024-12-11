@@ -1,0 +1,5 @@
+.ctn-game-history{
+    display: flex;    
+    justify-content: center;
+    min-height: 55vh;
+}

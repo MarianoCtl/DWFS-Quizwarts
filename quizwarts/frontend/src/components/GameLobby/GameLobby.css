@@ -1,0 +1,38 @@
+.list-group-item {
+    margin: 0;
+    padding: 8px 10px;
+    border-bottom: 1px solid var(--font-color-golden) !important;
+}
+
+.list-group-item:last-child {
+    border-bottom: none !important;
+}
+
+.participants-container {
+    height: 100%;
+}
+
+.btn-chat {
+    width: 60px;
+    height: 60px;
+    padding: 10px;
+}
+
+.participants-scroll {
+    overflow-y: auto;
+    height: 200px;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #D2AA6B;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: rgba(47, 57, 77, 0.8);
+    border-radius: 10px;
+}

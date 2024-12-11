@@ -1,0 +1,13 @@
+/*Violeta para los enlaces*/
+.nav-link-login{
+    color: #8A2BE2;
+}
+  
+.nav-link-login.active{
+    background-color: #6A0DAD; 
+    color: white;
+}
+  
+.nav-link-login:hover{
+    color: #7B68EE;
+}

@@ -1,0 +1,34 @@
+/*Estilos para el Scroll*/
+.my-purchases-container{
+    min-height: 350px;
+}
+
+.purchases-scroll{
+    max-height: 350px;
+    overflow-y: auto;
+}
+
+::-webkit-scrollbar{
+    width: 5px;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: #D2AA6B;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-track{
+    background: rgba(47, 57, 77, 0.8);
+    border-radius: 10px;
+}
+
+@media (max-width: 991px){
+    .purchases-scroll{
+        margin-top: 20px !important;  
+    }
+}
+
+/*Bordes rectos en todos los elementos de lista*/
+.list-group-item{
+    border-radius: 0 !important;
+}

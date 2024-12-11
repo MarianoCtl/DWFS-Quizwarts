@@ -1,0 +1,112 @@
+.info-sala-underline {
+    border-bottom: 1px solid var(--font-color-golden);
+    margin: 0 20px;
+    box-sizing: border-box;
+}
+
+.info-sala-underline:last-child {
+    border-bottom: none;
+}
+
+button:disabled {
+    background: #6b63b5cb !important;
+    border: solid 1px #6b63b5cb !important;
+}
+
+input[value] {
+    color: var(--font-color-golden);
+}
+
+.p-info-card {
+    padding-top: 4px;
+    margin: 4px 0;
+}
+
+.container-card-room{
+    border-radius: 16px;
+    width: 200px;
+}
+
+.name-room {
+    font-size: 18px;
+    text-align: center;
+}
+
+.card-room, .modal-password {
+    background: #2E384C;
+    border-radius: 12px;
+}
+
+.message-error {
+    margin-top: -20px;
+    padding-bottom: 8px;
+}
+
+.contaner-info-card-room {
+    position: relative;
+}
+
+.modal-password {
+    position: absolute;
+    top:0;
+    background: #2E384C;
+}
+
+.text-password{
+    padding-top: 32px;
+}
+
+.container-icon-player-galleon {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.button-join {
+    border-radius: 0;
+    margin: 24px 0;
+}
+
+.button-into{
+    margin-top: 18px;
+    margin-bottom: 24px;
+    border-radius: 0;
+}
+
+.container-icon-difficulty {
+    display: flex;
+    justify-content: center;
+    margin-top: 8px;
+}
+
+.difficulty {
+    margin: 0;
+    padding: 0;
+    margin-left: 8px;
+}
+
+.bar-1 {
+    background: var(--font-color-golden);
+    height: 6px;
+    width: 4px;
+    border-radius: 10px;
+    margin-right: 2px;
+    transform: translateY(13px);
+}
+
+.bar-2 {
+    background: var(--font-color-golden);
+    height: 12px;
+    width: 4px;
+    border-radius: 10px;
+    margin-right: 2px;
+    transform: translateY(7px);
+}
+
+.bar-3 {
+    background: var(--font-color-golden);
+    height: 15px;
+    width: 4px;
+    border-radius: 10px;
+    margin-right: 2px;
+    transform: translateY(4px);
+}

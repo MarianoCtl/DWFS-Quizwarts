@@ -1,0 +1,14 @@
+.btn-mobile{
+    width: 60px;
+    height: 60px;
+    padding: 10px;
+    border: none;
+}
+
+.custom-disabled{
+    background-color:#6B63B5 !important; 
+    border-color:#6B63B5 !important;
+    color:white !important;
+    opacity: 0,65 !important; 
+    pointer-events: none;
+}

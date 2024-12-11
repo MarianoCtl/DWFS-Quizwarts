@@ -1,0 +1,31 @@
+.rank{
+    border: .5px solid rgba(0, 0, 0, 0.2);
+    min-height: 100%;
+    font-size: calc(.55rem + .55vw);
+    max-height: 360px;
+    overflow-y: scroll;
+}
+.rank::-webkit-scrollbar {
+    width: 7px!important;
+}
+.ctn-rank{
+    justify-content: space-around;
+    min-width: 340px;
+    
+}
+@media(max-width:700px){
+    .ctn-rank{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+@media(max-width:400px){
+    .rank{
+        font-size: .85rem;
+
+    }
+    .rank-title{
+        text-align: center;
+    }
+}

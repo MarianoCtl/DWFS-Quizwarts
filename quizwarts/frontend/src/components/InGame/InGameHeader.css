@@ -1,0 +1,10 @@
+.tiempo-restante-circle {
+    width: 75px; 
+    height: 75px; 
+    border-radius: 50%; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 0 auto;
+}

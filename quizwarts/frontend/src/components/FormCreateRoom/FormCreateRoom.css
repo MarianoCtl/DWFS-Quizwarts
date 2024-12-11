@@ -1,0 +1,73 @@
+.create-room-form {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 80%;
+}
+
+@media (max-width: 768px) {
+  .create-room-form {
+    width: 90%;
+  }
+}
+
+.input-group-play {
+  flex: 1 1 30%;
+  /* 3 columnas */
+  display: flex;
+  flex-direction: column;
+}
+
+.input-play {
+  background-color: #2A2940;
+  border: none;
+}
+
+.btn-show {
+  color: #6c757d;
+  border: none;
+}
+
+.label-play {
+  font-weight: bold;
+}
+
+.input-play,
+.select-play {
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.password-wrapper {
+  display: flex;
+}
+
+.password-wrapper button {
+  cursor: pointer;
+}
+
+.create-room-btn {
+  align-self: center;
+}
+
+.container-form {
+  background-color: #3d3b5d73;
+  color: white;
+  min-height: 25vh;
+}
+
+.input-with-icon {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.icon-dollar {
+  position: absolute;
+  left: .5rem;
+  color: #ccc;
+  /* Color del símbolo $ */
+  font-size: 1.2rem;
+}

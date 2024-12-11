@@ -1,0 +1,54 @@
+.root {
+    --font-color-golden: #D2AA6B;
+}
+
+.b-panelroom-primary {
+    background: rgba(61, 59, 93, 0.41);
+}
+
+.b-panelroom-secondary {
+    background: rgba(48, 46, 71, 0.74);
+}
+
+.ph-golden::placeholder {
+    color: var(--font-color-golden);
+    font-size: 18px;
+}
+
+.ob-input:focus {
+    outline: none !important;
+    border: var(--font-color-golden) 1px solid;
+    color: var(--font-color-golden);
+    box-shadow: 1px 1px 5px 0px var(--font-color-golden);
+}
+
+.ob-input:active {
+    border: 1px solid var(--font-color-golden);
+}
+
+.input-password-room::placeholder{
+    font-size: 16px;
+}
+
+.panelroom-scroll {
+    max-height: 400px;
+    overflow-y: auto;
+}
+
+.container-panel-room {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0px 16px;
+    justify-content: center;
+}
+
+@media (max-width: 576px) {
+    .m-input-search {
+        margin-top: 20px !important;
+    }
+
+    .m-partidas-disponibles {
+        margin-top: 20px;
+        text-align: center;
+    }
+}

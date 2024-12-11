@@ -1,0 +1,21 @@
+.btn-backLobby {
+  display: flex;
+  align-self: center;
+}
+
+.btn-backLobby:active {
+  outline: none !important;
+  box-shadow: none !important;
+  background-color: #433c87 !important;
+  color: #d2aa6b !important;
+}
+
+.ctn-order {
+  justify-content: space-between;
+}
+@media (max-width:768px){
+  .ctn-confirm{
+    width: 90%;
+    text-align: center;
+  }
+}

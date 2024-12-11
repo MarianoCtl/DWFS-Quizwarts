@@ -1,0 +1,69 @@
+.chat-container {
+    min-height: 450px;
+    margin: 48px auto;
+    padding: 0;
+    position: relative;
+}
+
+.container-input {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.input-send-message {
+    border: none !important;
+    height: 36px;
+    width: 100%;
+    padding-left: 8px;
+}
+
+.input-send-message:focus {
+    box-shadow: none;
+}
+
+.btn-send-message {
+    height: 36px;
+    border: none;
+    outline: none;
+}
+
+.container-message {
+    max-height: 414px;
+    overflow-y: scroll;
+}
+
+.bi-send-fill {
+    font-size: 24px;
+    padding-right: 5px;
+}
+
+.bi-chat-fill, .bi-x-octagon-fill{
+    font-size: 32px;
+}
+
+/* Diseño en chat GameLobby */
+.container-chat-gamelobby {
+    margin: 0;
+    width: 100%;
+}
+
+@media (max-width: 991px){
+    .container-chat-gamelobby {
+        margin-top: 40px;
+    }
+}
+
+/* Diseño en chat pantalla principal */
+@media (max-width: 767px) {
+    .chat-container {
+        height: calc(100vh - 68px);
+        margin-top: 67px;
+        background: #2E384C;
+        padding: 0;
+    }
+
+    .container-message {
+        max-height: calc(100vh - 105px);
+    }
+}

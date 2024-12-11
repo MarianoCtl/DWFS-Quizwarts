@@ -1,0 +1,53 @@
+.wallet-container {
+  display: flex;
+  justify-content: space-around;
+  padding: 1rem;
+  flex-grow: 1;
+}
+
+.table-container,
+.balance-container {
+  flex: 1;
+  max-width: 45%;
+}
+
+.balance-container {
+  min-width: 300px;
+  max-width: 550px;
+}
+
+.ctn-main {
+  justify-content: space-around;
+}
+
+/* Ajustes para pantallas más pequeñas */
+@media (max-width: 768px) {
+  .wallet-container {
+    padding: 0 1rem;
+    overflow-y: auto;
+  }
+
+  .wallet-tittle {
+    display: flex;
+    align-items: center;
+  }
+
+  .table-container,
+  .balance-container {
+    width: 90%;
+    max-width: none;
+    margin-bottom: 2rem;
+  }
+
+  .table-wallet-container {
+    overflow-x: auto;
+  }
+
+  .balance-container {
+    margin-top: auto;
+  }
+
+  .ctn-main {
+    align-items: center;
+  }
+}

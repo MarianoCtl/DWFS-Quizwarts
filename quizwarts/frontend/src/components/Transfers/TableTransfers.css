@@ -1,0 +1,66 @@
+.table-wallet-container {
+    height: 40vh;
+    width: 40vw;
+    max-width: 550px;
+    align-content: center;
+  }
+  
+  .table-tittle {
+      display: flex;
+      justify-content: center;
+    }
+  
+  .table-wrapper {
+    overflow-y: auto;
+    overflow-x: hidden;
+    max-height: 40vh;
+    
+    border: 0.2rem solid #3d3b5d79;
+  }
+  
+  .table-wallet {
+    width: 100%;
+    border-collapse: collapse;
+    
+  }
+  
+  .table-wallet th,
+  .table-wallet td {
+    padding: 0.5em;
+    text-align: center;
+    border-bottom: 1px solid var(--font-color-golden);
+  }
+  
+  thead th {
+    position: relative;
+    color: #fff;
+  }
+
+  tbody tr:hover {
+    background-color: #391a5685;
+  }
+  
+  .badge {
+    display: inline-block;
+    padding: 0.3em 0.6em;
+    border-radius: 1em;
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  /* Scrollbar styling */
+  .table-wrapper::-webkit-scrollbar {
+    width: 8px;
+  }
+  @media (max-width: 768px) {
+    .table-wallet-container{
+      display: flex;
+      flex-direction: column;
+      width: 80%;
+      min-width: 80vw;
+      min-height: 50vh;
+      height: 50%;
+    }
+  }
+ 
+  

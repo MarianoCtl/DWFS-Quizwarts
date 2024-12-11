@@ -1,0 +1,65 @@
+.banderas {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  padding: 10px;
+}
+
+.bandera span {
+  position: relative;
+  margin-left: 3%;
+  z-index: 2;
+}
+
+.bandera {
+  height: 2.5rem;
+  display: flex;
+  align-items: center;
+  color: white;
+  font-weight: bold;
+  border: 1px solid #333;
+  border-radius: 5px;
+  position: relative;
+  overflow: hidden;
+  white-space: nowrap;
+  clip-path: polygon(0 0, calc(100% - 20px) 0, 100% 50%, calc(100% - 20px) 100%, 0 100%);
+  transform-origin: left;
+  animation: loadAnimation 2.5s ease-out forwards;
+  transition: transform 0.3s ease, width 0.3s ease;
+}
+
+/* Animación inicial */
+@keyframes loadAnimation {
+  0% {
+    transform: scaleX(0);
+    /* Comienza sin ancho */
+  }
+
+  100% {
+    transform: scaleX(1);
+    /* Termina ocupando su tamaño completo */
+  }
+}
+
+/* Colores específicos para cada casa */
+.bandera.Gryffindor {
+  background-image: linear-gradient(to right, #391a1a, #49271f, #573523, #624527, #6b562d);
+}
+
+.bandera.Ravenclaw {
+  background-image: linear-gradient(to right, #182967, #3b3d6e, #545274, #6b687a, #808080);
+}
+
+.bandera.Hufflepuff {
+  background-image: linear-gradient(to right, #312e24, #3e3826, #4c4229, #5b4c2b, #6b562d);
+}
+
+.bandera.Slytherin {
+  background-image: linear-gradient(to right, #274b35, #2a5350, #405961, #595f67, #686868);
+}
+
+.error-message {
+  color: red;
+  font-weight: bold;
+  margin-top: 10px;
+}

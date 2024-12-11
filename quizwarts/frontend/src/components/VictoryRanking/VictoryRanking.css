@@ -1,0 +1,8 @@
+.ranking-title{
+    font-size: calc(.77rem + .5vw);
+}
+@media(max-width:400px){
+    .ranking-title{
+        font-size: .1rem;
+    }
+}

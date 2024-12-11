@@ -1,0 +1,20 @@
+.btn-question {
+    background: #2A2940;
+    color: var(--font-color-golden); 
+    border: none;
+}
+
+.btn-question:hover {
+    background: #3A3950;
+    color: var(--font-color-golden); 
+}
+
+.btn-question:active {
+    background: #1A1930;
+    color: var(--font-color-golden); 
+}
+
+.btn-question.selected {
+    background: #4A4960;
+    color: var(--font-color-golden); 
+}

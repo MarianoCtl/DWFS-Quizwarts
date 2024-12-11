@@ -1,0 +1,24 @@
+.icon-dialogue-chat{
+    border-radius: 100%;
+    width: 56px;
+    height: 56px;
+    font-size: 32px;
+    padding: 0px;
+}
+
+.container-button-chat{
+    justify-content: end;
+    margin: 48px 0;
+}
+
+.button-position{
+    position: fixed;
+    right: 15px;
+    bottom: 5vh;
+    transition: bottom 0.8s ease-in-out;
+}
+
+.chat-active{
+    bottom: calc(100% - 130px);
+    transition: bottom 0.8s ease-in-out;
+}
